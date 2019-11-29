@@ -9,5 +9,5 @@ docker push smcnutt/multi-server:$SHA
 docker push smcnutt/multi-worker:$SHA
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=smcnutt/multi-server:$SHA
-kubectl set image deployments/server-deployment worker=smcnutt/multi-worker:$SHA
-kubectl set image deployments/server-deployment client=smcnutt/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=smcnutt/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=smcnutt/multi-client:$SHA
