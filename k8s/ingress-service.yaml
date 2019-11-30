@@ -12,7 +12,7 @@ spec:
     - hosts:
       - abl.ninja
       - www.abl.ninja
-    secretName: k8s-multi-com
+      secretName: k8s-multi-com
   rules:
     - host: abl.ninja
       http:
